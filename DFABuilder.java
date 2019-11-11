@@ -11,7 +11,15 @@ public class DFABuilder {
 		DFA automata;
 		if(args.length == 1){
 			// use command line input as filename
-			automata = new DFA(args[0]);
+			try{
+					//Try to read the file, build and test the DFA
+					automata = new DFA(args[0]);
+					automata.userStringTest();
+				}
+				catch ( Exception e){
+					System.out.println(e);
+					System.exit(0);
+				}
 		}
 		else {
 			System.out.print("Load DFA from File? (y or n) ");
