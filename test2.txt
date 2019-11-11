@@ -1,0 +1,16 @@
+% INPUT (for DFA of Figure 1.6, Page 36 of text)
+//This DFA takes strings with an odd number of a's and ends in a b
+Number of states:	 4
+Alphabet:  a     b
+Transitions begin
+1 a   2
+1  				b 3
+2      a       1
+2    b 		4
+3     a     2
+3    b    3
+4  a  1
+4 b  4
+Transitions end
+Start state:  			1
+Accept states: 					4 
